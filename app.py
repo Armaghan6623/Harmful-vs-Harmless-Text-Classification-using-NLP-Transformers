@@ -1,8 +1,9 @@
 import streamlit as st
 
-st.title("NDMA Disaster Intelligence Dashboard")
-st.subheader("Prototype - v1.0")
+st.title("NLP Harmful Prompt Classifier")
+st.write("Upload text and get predictions")
 
-st.write("This is a simple test app deployed on Streamlit Cloud. The real NDMA dashboard will be added soon.")
+text = st.text_area("Enter a comment")
 
-st.success("Streamlit App Loaded Successfully!")
+if st.button("Predict"):
+    st.write("Prediction will appear here")
